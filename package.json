@@ -5,7 +5,7 @@
 	"scripts": {
 		"serve": "vue-cli-service serve",
 		"build": "vue-cli-service build",
-		"prettier": "prettier \"src/**/*.{js,jsx,css}\"",
+		"prettier": "prettier \"src/**/*.{js,jsx,css,vue}\"",
 		"format": "npm run prettier -- --write",
 		"lint": "eslint src",
 		"lint:fix": "npm run lint -- --fix",
@@ -17,7 +17,7 @@
 		}
 	},
 	"lint-staged": {
-		"**/*.{js,jsx,css}": [
+		"**/*.{js,jsx,css,vue}": [
 			"npm run format",
 			"npm run lint:fix",
 			"git add"
